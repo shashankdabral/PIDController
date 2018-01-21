@@ -10,12 +10,15 @@ public:
   double i_error;
   double d_error;
 
+  /* Ading variables for history */
+  double prev_cte_;
+  double int_cte_;
   /*
   * Coefficients
   */ 
-  double Kp;
-  double Ki;
-  double Kd;
+  double Kp_;
+  double Ki_;
+  double Kd_;
 
   /*
   * Constructor
