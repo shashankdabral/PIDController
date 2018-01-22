@@ -38,7 +38,7 @@ int main()
   Kp = 0.2;
   Kd = 3.0;
   Ki = 0.004;
-  pid::init(Kp,Ki,Kd);
+  pid.init(Kp,Ki,Kd);
 
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
