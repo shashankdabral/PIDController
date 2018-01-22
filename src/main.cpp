@@ -35,8 +35,9 @@ int main()
   PID pid;
   // TODO: Initialize the pid variable.
   double Kp, Ki,Kd;
-  Kp = 0.2;
-  //Kd = 3.0;
+  //Kp = 0.2;
+  Kp = 0.4 ; //Increasing responsiveness at turns
+  //Kd = 3.0; // High oscillations so increase D to 4.0
   Kd = 4.0;
   Ki = 0.004;
   pid.Init(Kp,Ki,Kd);
